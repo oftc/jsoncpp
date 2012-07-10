@@ -1,0 +1,8 @@
+Debug
+Release
+*.sln
+*.suo
+*.user
+*.swp
+*.vcproj
+*~
