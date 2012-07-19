@@ -24,6 +24,20 @@
       'src/lib_json/json_writer.cpp',
       'src/lib_json/json_value.cpp',
     ],
+
+    'conditions':
+    [
+      [
+        'OS!="win"',
+        {
+          'cflags':
+          [
+            '-std=c++0x',
+            '-stdlib=libc++'
+          ],
+        },
+      ],
+    ],
   },
   ],
 }
