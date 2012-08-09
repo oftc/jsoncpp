@@ -33,6 +33,7 @@
           'xcode_settings': {
             'OTHER_CFLAGS': [
               '-std=c++0x',
+              '-stdlib=libc++',
             ],
           },
           'cflags':
