@@ -7,3 +7,5 @@ Release
 *.vcproj
 *~
 *.vcxproj*
+jsoncpp.Makefile
+jsoncpp.target.mk
