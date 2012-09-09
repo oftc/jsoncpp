@@ -27,21 +27,26 @@
 
     'conditions':
     [
-      [
-        'OS!="win"',
+      [ 'OS!="win"',
+      {
+        'xcode_settings': 
         {
-          'xcode_settings': {
-            'OTHER_CFLAGS': [
-              '-std=c++0x',
-              '-stdlib=libc++',
-            ],
-          },
-          'cflags':
+          'OTHER_CFLAGS': 
           [
             '-std=c++0x',
+            '-stdlib=libc++',
           ],
         },
+        'cflags':
+        [
+          '-std=c++0x',
+        ],
+      },
       ],
+      [ 'OS=="freebsd"',
+      {
+        'cflags+': [ '-stdlib=libc++' ],
+      }],
     ],
   },
   ],
